@@ -22,7 +22,7 @@ class Person:
 
 p1 = Person("Emil", 25)
 print(p1.name)
-# print(p1.__age) # This will cause an error
+#print(p1.__age) # This will cause an error
 
 # Note: Private properties cannot be accessed directly from outside the class.
 
@@ -66,11 +66,13 @@ class Person:
     else:
       print("Age must be positive")
 
-p1 = Person("Tobias", 25)
+p1 = Person("Tobi", 30)
 print(p1.get_age())
 
 p1.set_age(26)
 print(p1.get_age())
+
+
 
 
 # Why Use Encapsulation?
@@ -106,7 +108,7 @@ class Student:
       return "Failed"
 
 
-student = Student("Emil")
+student = Student("Sophia")
 student.set_grade(85)
 print(student.get_grade())
 print(student.get_status())
@@ -178,7 +180,6 @@ print(calc.result)
 #
 # For example, __age becomes _Person__age.
 
-
 # See how Python mangles the name:
 
 class Person:
@@ -194,4 +195,3 @@ print(p1._Person__age) # Not recommended!
 
 # Note: While you can access private properties using the mangled name,
 # it's not recommended. It defeats the purpose of encapsulation.
-
