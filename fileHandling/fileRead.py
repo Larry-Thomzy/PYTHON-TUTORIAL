@@ -8,7 +8,8 @@
 
 # To open the file, use the built-in open() function.
 #
-# The open() function returns a file object, which has a read() method for reading the content of the file:
+# The open() function returns a file object, which has a read() method for reading the content
+# of the file:
 
 #
 # f = open("demofile.txt")
@@ -38,16 +39,19 @@ print()
 # Close Files
 # It is a good practice to always close the file when you are done with it.
 #
-# If you are not using the with statement, you must write a close statement in order to close the file:
+# If you are not using the with statement, you must write a close statement in order to
+# close the file:
 
 # variable.close()
 
 
-# Note: You should always close your files. In some cases, due to buffering, changes made to a file may not show until you close the file.
+# Note: You should always close your files. In some cases, due to
+# buffering, changes made to a file may not show until you close the file.
 
 
 # Read Only Parts of the File
-# By default the read() method returns the whole text, but you can also specify how many characters you want to return:
+# By default the read() method returns the whole text, but you can also specify how
+# many characters you want to return:
 
 # Here we are Return the 5 first characters of the file:
 

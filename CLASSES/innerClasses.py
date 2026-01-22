@@ -23,7 +23,8 @@ print(outer.name)
 
 print()
 # Accessing Inner Class from the Outside
-# To access the inner class, create an object of the outer class, and then create an object of the inner class:
+# To access the inner class, create an object of the outer class,
+# and then create an object of the inner class:
 
 # Let's Access the inner class and create an object:
 
@@ -47,9 +48,11 @@ inner.display()
 
 print()
 # Accessing Outer Class from Inner Class
-# Inner classes in Python do not automatically have access to the outer class instance.
+# Inner classes in Python do not automatically have access to the outer
+# class instance.
 #
-# If you want the inner class to access the outer class, you need to pass the outer class instance as a parameter:
+# If you want the inner class to access the outer class, you need to pass
+# the outer class instance as a parameter:
 
 # Let's Pass the outer class instance to the inner class:
 
@@ -74,7 +77,8 @@ print()
 
 
 # Practical Example
-# Inner classes are useful for creating helper classes that are only used within the context of the outer class:
+# Inner classes are useful for creating helper classes that are only used within
+# the context of the outer class:
 
 # Use an inner class to represent a car's engine:
 
