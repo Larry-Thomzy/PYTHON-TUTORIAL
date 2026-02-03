@@ -13,6 +13,8 @@ print(num2 / num1) # division (/)
 number = 1 + 2 * 3 / 4.0
 print(number)
 
+# pemdas : parenthesis, exponential, multiplication, division addition substraction
+# "please excuse my dear aunty sally"
 # Try to predict what the answer will be. Does python follow order of operations?
 
 #Another operator available is the modulos (%) operator, which returns the integer remainder of the division. dividend % divisor = remainder.
@@ -33,22 +35,8 @@ print(helloworld)
 
 #Python also supports multiplying strings to form a string with a repeating sequence:
 
-lotsofhellos = "hello" * 10
+lotsofhellos = "hello " * 10
 print(lotsofhellos)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Lists can be joined with the addition operators:
