@@ -1,7 +1,11 @@
 # Let's say you have a variable called "name" with your user name in it, and you would then like to print(out a greeting to that user.)
 # This prints out "Hello, John!"
 name = "John"
+age = 21
 print("Hello, %s!" % name)
+print("My name is %s" %name)
+
+print("%s is %d years old" %(name, age))
 
 #To use two or more argument specifiers, use a tuple (parentheses):
 
@@ -24,21 +28,36 @@ print("A list: %s" % mylist)
 #
 # %.<number of digits>f - Floating point numbers with a fixed amount of digits to the right of the dot.
 
+gpa = 12.568
+print("My gpa is %f" %gpa)
+
 astring = "Hello world!"
 astring2 = 'Hello world!'
 
 
 astring = "Hello world!"
 print("single quotes are ' '")
+print("Don't")
+print('Don\'t')
 
+
+# String methods
+
+# len() returns the number of characters in a string
 print(len(astring))
+print(len("Larry Thomzy!"))
+
+# index : it returns the position of a particular character
 
 astring = "Hello world!"
 print(astring.index("o"))
 
+# count : it counts and returns how many times a character appears
 astring = "Hello world!"
 print(astring.count("l"))
 
+
+# slicing: here we remove a portion out of the original string
 astring = "Hello world!"
 print(astring[3:7])
 

@@ -19,12 +19,12 @@ for x in mylist:
 #Accessing an index which does not exist generates an exception (an error).
 
 numbers = [1,2,3]
-print(numbers[10])
+# print(numbers[10])
 
 
 # list by accepting its values from user
 L = eval(input('Enter a list:'))
-print('The first element is', L[0])
+print('The first element is', L[3])
 
 print(L)
 
@@ -245,7 +245,7 @@ else:
 print('You have', num_right, 'out of 1 right')
 
 # Question 2
-print('Which state has only one neighbour?', end='')
+print('Which state has only one neighbour?', end=' ')
 guess = input()
 if guess.lower()=='maine':
     print('Correct!')

@@ -29,7 +29,15 @@ print(thisset)
 
 
 myset = {"apple", "banana", "cherry"}
+mylist = ["apple", "banana", "cherry"]
+name = "Larry"
+mytuple = ("apple", "banana", "cherry")
 print(type(myset))
+print(type(mylist))
+print(type(name))
+print(type(mytuple))
+
+
 
 
 # Using the set() constructor to make a set:
@@ -76,7 +84,7 @@ thisset.update(tropical)
 
 print(thisset)
 
-# Add elements of a list to at set:
+# Add elements of a list to a set:
 thisset = {"apple", "banana", "cherry"}
 mylist = ["kiwi", "orange"]
 
@@ -127,7 +135,7 @@ print(thisset)
 thisset = {"apple", "banana", "cherry"}
 #
 # del thisset
-#
+# #
 # print(thisset)
 
 
@@ -204,8 +212,8 @@ print(z)
 #
 # The update() changes the original set, and does not return a new set.
 
-set1 = {"a", "b", "c"}
-set2 = {1, 2, 3}
+set1 = {"a", "b", "c", "b"}
+set2 = {1, 2, 3,1}
 
 set1.update(set2)
 print(set1)
@@ -228,8 +236,9 @@ print(x)
 print(type(x))
 
 
-new_set = {"Salim", "Ammid", "Collins", "Basit", "Kanan"}
-join_set = {"Salim", "Bolanle", "Ibunku", "Bidemi"}
+# Intersection
+new_set = {"Salim", "Ammid", "Collins", "Basit", "Kanan",}
+join_set = {"Salim", "Bolanle", "Ibunku", "Bidemi", "Ammid"}
 
 intersect = new_set.intersection(join_set)
 print(intersect)

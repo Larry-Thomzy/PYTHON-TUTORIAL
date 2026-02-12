@@ -31,10 +31,10 @@ print(mixed_tuple)
 # Slicing: my_tuple[1:3]
 
 example = (5, 10, 15, 20 ,10)
-print(len(example))         # 4
-print(example.count(10))    # 1
+print(len(example))         # 5
+print(example.count(10))    # 2
 print(example.index(15))    # 2
-print(example[::-1])         # (10, 15)
+print(example[::-1])         # (10 - 15)
 print(example[0])     # 5
 
 
@@ -45,6 +45,8 @@ print(example[0])     # 5
 
 a, b, c = (1, 2, 3)
 print(a, b, c)
+print(b)
+print(c)
 
 
 
@@ -57,7 +59,7 @@ print(grade4)
 # Tuples can contain other tuples:
 
 nested = ((1, 2), (3, 4))
-print(nested[1][1])  # Output: 2
+print(nested[1][1])  # Output: 4
 
 
 
@@ -74,7 +76,7 @@ scores = {
     ("Alice", "Science"): 88
 }
 
-print(scores[("Alice", "Eng")])
+print(scores[("Bob", "Science")])
 
 
 # Excercise 1
@@ -132,7 +134,7 @@ liscence_tracker = {
     ("johndoe@gmail.com", "Myschool"): "2027/30/02"
 }
 
-print("Initial liscence tracker: ")
+print("Initial licence tracker: ")
 
 
 
