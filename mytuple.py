@@ -79,19 +79,56 @@ scores = {
 print(scores[("Bob", "Science")])
 
 
+
+
+
+
+
+
+
 # Excercise 1
 # Tech (Software Licensing Tracker)
-# Task: Create a dictionary using (user_email, software_name) as keys,
+# Task: Create a dictionary using
+# (user_email, software_name) as keys,
 # and store the license expiration date as values.
 
+
+
+
+
+
+
+
+
+
+software = {
+    ("larrythomzy@gmail.com", "Netflix"): "14/02/2026",
+    ("folarin@gamil.com", "Candycrush"): "27/02/2026",
+
+}
+
+software.update({("4kfright@gmail.com", "codm") : "02/03/2026"})
+print(software.get(("folarin@gamil.com", "Candycrush" )))
+print(software.get(("4kfright@gmail.com", "codm")))
+software.update({("larrythomzy@gmail.com", "Netflix") :"30/04/2026"})
+print(software)
+
+
+
+
+
 #  Add 3 entries.
-#  Retrieve the license expiry for a specific user and software.
+#  Retrieve the license expiry for a
+#  specific user and software.
 #  Update one expiry date.
+
+
+
 
 
 # Excercise 2
 #  Finance (Stock Portfolio)
-# Task: Use (investor_name, stock_symbol) as the key, and number of shares as value.
+# Task: Use (investor_name, stock_symbol) as the key, and number of shares as value.k
 
 # Add 4 investor-stock entries.
 # Increase shares of one stock.
@@ -108,11 +145,12 @@ print(scores[("Bob", "Science")])
 # Print check-in time of a patient on a specific date.
 # Count how many patients checked in on a give day.
 
+
+
+
 # Excercise 4
 # Education (Student Subject Scores)
 # Task: Use (student_name, subject) as key and score as value.
-
-
 
 #  Add 5 students with different subjects and scores.
 #  Get a student’s score in a particular subject.

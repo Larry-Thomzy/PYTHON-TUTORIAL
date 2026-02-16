@@ -69,12 +69,13 @@ thisdict = {
 # From Python's perspective, dictionaries are defined as objects with the data
 # type 'dict':
 
+print(type (thisdict))
 
 
 
 
 
-# Using the dict() method to make a dictionary:
+# Using the dict() constructor  method to make a dictionary:
 
 thisdict = dict(name = "John", age = 36, country = "Norway")
 print(thisdict)
@@ -93,12 +94,16 @@ car = {
   "year": 1964
 }
 x = car["model"]
+y = car ["year"]
+z = car["brand"]
 print(x)
+print(y)
+print(z)
 
 
 # There is also a method called get() that will give you the same result:
 
-y = car.get("brand")
+y = car.get("model")
 print(y)
 
 
@@ -122,7 +127,8 @@ x = car.keys()
 
 print(x) #before the change
 
-car["color"] = "white"
+car["color"] = "white" # value to our dctionary
+print(car)
 
 print(x) #after the change
 
@@ -130,8 +136,11 @@ print(x) #after the change
 # Get Values
 # The values() method will return a list of all the values in the dictionary.
 
+print(thisdict)
 x = thisdict.values()
+y = thisdict.keys()
 print(x)
+print(y)
 
 # Make a change in the original dictionary, and see that the values list
 # gets updated as well:
@@ -196,6 +205,7 @@ car2 = {
   "model": "Urus",
   "year": 2024
 }
+print(car2)
 car2["year"] = 2026
 
 print(car2)
@@ -212,6 +222,7 @@ thisdict = {
   "model": "Mustang",
   "year": 1964
 }
+print(thisdict)
 thisdict.update({"year": 2020})
 print(thisdict)
 
@@ -224,6 +235,7 @@ thisdict = {
   "model": "Mustang",
   "year": 1964
 }
+print(thisdict)
 thisdict["color"] = "red"
 print(thisdict)
 
@@ -238,7 +250,9 @@ thisdict = {
   "model": "Mustang",
   "year": 1964
 }
+print(thisdict)
 thisdict.update({"color": "red"})
+print(thisdict)
 
 
 # Removing Items
@@ -320,6 +334,7 @@ for x, y in thisdict.items():
   print(x, y)
 
 # Copy a Dictionary
+
 # You cannot copy a dictionary simply by typing dict2 = dict1, because: dict2 will only be a reference to dict1, and changes made in dict1 will automatically also be made in dict2.
 #
 # There are ways to make a copy, one way is to use the built-in Dictionary method copy().
