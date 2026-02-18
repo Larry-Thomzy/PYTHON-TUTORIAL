@@ -20,9 +20,7 @@ a = 33
 b = 200
 if b > a:
   print("b is greater than a")
-
 # Checking if a number is positive:
-
 number = 15
 if number > 0:
   print("The number is positive")
@@ -37,7 +35,7 @@ if number > 0:
 a = 33
 b = 200
 if b > a:
-    print("b is greater than a") # you will get an error
+  print("b is greater than a") # you will get an error
 
 
 # Note: You can use spaces or tabs for indentation, but you must use the same amount of indentation
@@ -61,6 +59,7 @@ if age >= 18:
 is_logged_in = True
 if is_logged_in:
   print("Welcome back!")
+
 
 # Python can evaluate many types of values as True or False in an if statement.
 
@@ -180,7 +179,7 @@ else:
 # You can combine if, elif, and else to create a comprehensive decision-making structure.
 
 # Temperature classifier:
-
+name = "Larry"
 temperature = 22
 
 if temperature > 30:
@@ -499,7 +498,7 @@ else:
 # This will cause an error (empty code block):
 score = 85
 
-# if score > 90:
+#if score > 90:
   # This is excellent
 # This will raise an IndentationError
 
@@ -541,34 +540,4 @@ def calculate_discount(price):
 # Add an else that prints "Adult"
 # Create a variable score with the value 85
 # Use a shorthand if to print "Pass" if score is greater than or equal to 50
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
