@@ -9,7 +9,7 @@
 # A function with one argument:
 
 def my_function(fname):
-  print(fname + " Refsnes")
+  print(fname + " Welcome")
 
 my_function("Emil")
 my_function("Tobias")
@@ -85,6 +85,8 @@ def my_function(animal, name):
   print("My", animal + "'s name is", name)
 
 my_function(animal = "dog", name = "Buddy")
+my_function("dog", "Buddy")
+my_function(name="Bobby", animal="Dog")
 
 # This way, with keyword arguments, the order of the arguments does not matter.
 
