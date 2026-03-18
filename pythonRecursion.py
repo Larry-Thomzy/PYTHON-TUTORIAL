@@ -37,12 +37,10 @@ def factorial(n):
   # Recursive case
   else:
     return n * factorial(n - 1)
-
 print(factorial(5))
 
 
 # The base case is crucial. Always make sure your recursive function has a condition that will eventually be met.
-
 
 # Fibonacci Sequence
 # The Fibonacci sequence is a classic example where each number is the sum of the two preceding ones.
@@ -61,7 +59,6 @@ def fibonacci(n):
     return n
   else:
     return fibonacci(n - 1) + fibonacci(n - 2)
-
 print(fibonacci(7))
 #
 # (6) + (5)

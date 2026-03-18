@@ -10,16 +10,14 @@
 #
 # All these objects have a iter() method which is used to get an iterator:
 
-
+name = "larry"
 # Return an iterator from a tuple, and print each value:
-
 mytuple = ("apple", "banana", "cherry")
 myit = iter(mytuple)
-
+print(myit)
 print(next(myit))
 print(next(myit))
 print(next(myit))
-
 # Even strings are iterable objects, and can return an iterator:
 
 # Strings are also iterable objects, containing a sequence of characters:
@@ -33,6 +31,7 @@ print(next(myit))
 print(next(myit))
 print(next(myit))
 print(next(myit))
+
 
 # Looping Through an Iterator
 # We can also use a for loop to iterate through an iterable object:
@@ -88,9 +87,14 @@ print(next(myiter))
 print(next(myiter))
 print(next(myiter))
 print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+
 
 # Stop after 20 iterations:
-
 class MyNumbers:
   def __iter__(self):
     self.a = 1

@@ -1,11 +1,14 @@
 # Python Decorators
 
-# Decorators let you add extra behavior to a function, without changing the function's code.
+# Decorators let you add extra behavior to a function,
+# without changing the function's code.
 
-# A decorator is a function that takes another function as input and returns a new function.
+# A decorator is a function that takes another function as input and
+# returns a new function.
 
 # Basic Decorator
-# Define the decorator first, then apply it with @decorator_name above the function.
+# Define the decorator first, then apply it with @decorator_name above the
+# function.
 
 
 # A basic decorator that uppercases the return value of the decorated function.
@@ -21,7 +24,8 @@ def myfunction():
 
 print(myfunction())
 
-# By placing @changecase directly above the function definition, the function myfunction is being "decorated" with the changecase function.
+# By placing @changecase directly above the function definition, the function
+# myfunction is being "decorated" with the changecase function.
 
 # The function changecase is the decorator.
 
@@ -61,8 +65,8 @@ def changecase(func):
   return myinner
 
 @changecase
-def myfunction(nam):
-  return "Hello " + nam
+def myfunction(name):
+  return "Hello " + name
 
 print(myfunction("John"))
 
@@ -73,15 +77,18 @@ print(myfunction("John"))
 # Secure the function with *args and **kwargs arguments:
 
 def changecase(func):
-  def myinner(*args, **kwargs):
-    return func(*args, **kwargs).upper()
+  def myinner(*args):
+    return func(*args).upper()
   return myinner
 
 @changecase
-def myfunction(nam):
-  return "Hello " + nam
+def myfunction(*nam):
+  result = ""
+  for i in range(len(nam)):
+    result += "Hello " + nam[i] + "\n"
+  return result
 
-print(myfunction("John"))
+print(myfunction("Alex", "Craig", "Bob"))
 
 
 # Decorator With Arguments
@@ -140,10 +147,10 @@ print(myfunction())
 
 # Normally, a function's name can be returned with the __name__ attribute:
 
-def myfunction():
+def larry():
   return "Have a great day!"
 
-print(myfunction.__name__)
+print(larry.__name__)
 # But, when a function is decorated, the metadata of the original function is lost.
 
 
