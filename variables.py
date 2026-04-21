@@ -59,9 +59,9 @@ is_hot = True
 is_cold = False
 is_adult = age >= 18
 
-#There are just a couple of rules to follow when naming your variables.
-#Variable names can contain letters, numbers, and the underscore.
-#Variable names cannot contain spaces
+# There are just a couple of rules to follow when naming your variables.
+# Variable names can contain letters, numbers, and the underscore.
+# Variable names cannot contain spaces
 # Variable names cannot start with a number.
 # Case matters—for instance, temp and Temp are different.
 # Using descriptive names as your variables makes your program more understandable.

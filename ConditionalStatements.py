@@ -109,7 +109,8 @@ elif age >= 65:
 
 # When to Use Elif
 # Use elif when you have multiple mutually exclusive conditions to check.
-# This is more efficient than using multiple separate if statements because Python stops checking once it finds a true condition.
+# This is more efficient than using multiple separate if statements because Python stops
+# checking once it finds a true condition.
 
 # Day of the week checker:
 
@@ -156,7 +157,8 @@ if b > a:
 else:
   print("b is not greater than a")
 
-# This creates a simple two-way choice: if the condition is true, execute one block; otherwise, execute the else block.
+# This creates a simple two-way choice: if the condition is true, execute one block;
+# otherwise, execute the else block.
 
 
 # How Else Works
@@ -168,8 +170,7 @@ else:
 
 # Checking even or odd numbers:
 
-number = 7
-
+number = 8
 if number % 2 == 0:
   print("The number is even")
 else:
@@ -285,9 +286,9 @@ b = 33
 c = 500
 if a > b or a > c:
   print("At least one of the conditions is True")
+#
 
-
-# The not Operator
+ # The not Operator
 # The not keyword is a logical operator, and is used to reverse the result of the conditional statement.
 
 # Test if a is NOT greater than b:
@@ -540,4 +541,70 @@ def calculate_discount(price):
 # Add an else that prints "Adult"
 # Create a variable score with the value 85
 # Use a shorthand if to print "Pass" if score is greater than or equal to 50
+
+
+# 1.
+# Ask the user for their age.
+# If the age is 18 or above, print: "Access granted".
+
+# 2.
+# Input a temperature.
+# If it is greater than 30, print: "It's a hot day".
+
+# 3.
+# Ask the user for a number.
+# If the number is divisible by 2, print "Even", otherwise print "Odd".
+
+# 4.
+# Ask the user to enter a password.
+# If it equals "python123", print "Access granted", otherwise print "Access denied".
+
+# 5.
+# Input a score (0–100).
+# 70 and above → "A"
+# 50–69 → "B"
+# 40–49 → "C"
+# Below 40 → "Fail"
+
+# 6.
+# Input a traffic light color ("red", "yellow", "green").
+# red → "Stop"
+# yellow → "Get ready"
+# green → "Go"
+# anything else → "Invalid signal"
+
+
+
+# 7.
+# Ask for age and monthly income.
+# If age ≥ 21 and income ≥ 50,000 → "Eligible"
+# Otherwise → "Not eligible"
+
+# 8.
+# Ask for purchase amount.
+# ≥ 100,000 → "20% discount"
+# ≥ 50,000 → "10% discount"
+# otherwise → "No discount"
+
+# 9.
+# Ask for username.
+# If username is "admin":
+# Ask for password
+# If password is "admin123" → "Welcome Admin"
+# Else → "Wrong password"
+# Else → "Unknown user"
+
+# 10.
+# Input electricity units consumed.
+# ≤ 100 → "Low usage"
+#
+# 100 and ≤ 300 → "Moderate usage"
+#
+# 300 → "High usage"
+
+# 11.
+# Input a score.
+# Use shorthand if to assign "Pass" if score ≥ 50, otherwise "Fail".
+# Input two numbers.
+# Use shorthand if to print the larger number.
 

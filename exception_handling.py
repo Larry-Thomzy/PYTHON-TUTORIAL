@@ -114,7 +114,7 @@ except:
 
 
 # Raise an error and stop the program if x is lower than 0:
-x = -1
+x = 7
 
 if x < 0:
   raise Exception("Sorry, no numbers below zero")
@@ -126,7 +126,7 @@ if x < 0:
 
 
 # Raise a TypeError if x is not an integer:
-x = "hello"
+x = 9
 
 if not type(x) is int:
   raise TypeError("Only integers are allowed")
@@ -237,9 +237,3 @@ withdraw(balance, 7000)
 #     print("Result:", result)
 # finally:
 #     print("Program completed.")
-
-
-
-
-
-

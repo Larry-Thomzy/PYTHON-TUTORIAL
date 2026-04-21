@@ -145,6 +145,7 @@ print(x)
 
 txt = "The rain in Spain"
 x = re.search("\s", txt)
+print(x)
 
 print("The first white-space character is located in position:", x.start())
 
@@ -250,6 +251,8 @@ print(re.findall(r"[A-Z]", "My Name is LARRY")) # Output: ['M', 'N', 'LARRY']
 match = re.search(r"(\w+)@(\w+)\.com", "contact me at larry@web3.com")
 print(match.group(1))  # larry
 print(match.group(2))  # web3
+
+
 
 
 # Validate a Nigerian phone number:
