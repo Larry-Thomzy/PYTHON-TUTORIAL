@@ -1,4 +1,7 @@
 # Python Loops
+# A loop let you run the same block of code multiple times until a condition is met.
+# When you have to perform a task repeatedly until a condition is met, you will use a loop.
+
 # Python has two primitive loop commands:
 
 # while loops
@@ -12,9 +15,10 @@
 i = 1
 while i < 6:
   print(i)
-  i += 1
+  i += 1 # same as i = i + 1
 
 # Note: remember to increment i, or else the loop will continue forever.
+print("--------------")
 
 # The break Statement
 # With the break statement we can stop the loop even if the while condition is true:
@@ -26,18 +30,21 @@ while i < 6:
     break
   i += 1
 
+print("-----------")
+
 # The continue Statement
 # With the continue statement we can stop the current iteration, and continue with the next:
 
 # Continue to the next iteration if i is 3:
 
-i = 0
+i = 2
 while i < 6:
   i += 1
   if i == 3:
     continue
   print(i)
 
+print("---------------")
 # The else Statement
 # With the else statement we can run a block of code once when the condition no longer is true:
 
@@ -54,3 +61,21 @@ else:
 
 
 
+# Excercies 1
+# password == 123
+# Keep Prompting  a user to enter a password if incorrect
+# print "Access Granted" if correct
+
+
+# Write a Program that prints numbers from 1 to 10 using while loops
+
+# Write a program that prints numbers 10 to 1 using while loops
+
+# Write a program that prints all even numbers from 1 to 20 using a while loop
+
+# Write a program that calculates the sum of numbers from 1 to 50 using a while loop
+
+# write a program that prints the multiplication table of 5 (from 5 x 1 to 5 x 10) using a while loop
+
+# Number guessing game:
+# set a secret number. Keep asking the user to guess the number until they get it right
