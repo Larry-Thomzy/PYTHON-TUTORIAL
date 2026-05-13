@@ -234,9 +234,10 @@ print(set1)
 x = frozenset({"apple", "banana", "cherry"})
 print(x)
 print(type(x))
+new_set = {"Salim", "Ammid", "Collins", "Basit", "Kanan",}
+join_set = {"Salim", "Bolanle", "Ibunku", "Bidemi", "Ammid"}
 
 
-print(intersect)
 
 differ = new_set.difference(join_set)
 print(differ)
@@ -244,10 +245,8 @@ print(differ)
 sym_inter = new_set.symmetric_difference(join_set)
 print(sym_inter)
 # Intersection
-new_set = {"Salim", "Ammid", "Collins", "Basit", "Kanan",}
-join_set = {"Salim", "Bolanle", "Ibunku", "Bidemi", "Ammid"}
-
 intersect = new_set.intersection(join_set)
+print(intersect)
 
 
 

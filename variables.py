@@ -94,7 +94,7 @@ is_adult = age >= 18
 
 # jet_model armed with missile_loaded, fuel_lvl remaining
 
-#  Amored Tank Status
+# Amored Tank Status
 # tank name (string)
 # armor thickness in mm (int)
 # engine temperature in °C (float)

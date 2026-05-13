@@ -1,23 +1,29 @@
-import  math
+import math
+
 # User Input
 # Python allows for user input.
 # That means we are able to ask the user for input.
-# The following example asks for your name, and when you enter a name, it gets printed on the screen:
+# The following example asks for your name, and when you enter a name,
+# it gets printed on the screen:
 
 print("Enter your name:")
-name = input()
+name = input
 print(f"Hello {name}")
 
-# Python stops executing when it comes to the input() function, and continues when the user has given some input.
+# Python stops executing when it comes to the input() function,
+# and continues when the user has given some input.
 
 # Using prompt
-# In the example above, the user had to input their name on a new line. The Python input() function has a prompt parameter, which acts as a message you can put in front of the user input, on the same line:
+# In the example above, the user had to input their name on a new line.
+# The Python input() function has a prompt parameter, which acts as a message
+# you can put in front of the user input, on the same line:
 
 name = input("Enter your name:")
 print(f"Hello {name}")
 
 # Multiple Inputs
-# You can add as many inputs as you want, Python will stop executing at each of them, waiting for user input:
+# You can add as many inputs as you want, Python will stop
+# executing at each of them, waiting for user input:
 
 name = input("Enter your name:")
 print(f"Hello {name}")
@@ -29,9 +35,11 @@ print(f"Do you want a {fav2} {fav1} with {fav3} legs?")
 
 
 # Input Number
-# The input from the user is treated as a string. Even if, in the example above, you can input a number, the Python interpreter will still treat it as a string.
+# The input from the user is treated as a string. Even if,
+# in the example above, you can input a number, the
+# Python interpreter will still treat it as a string.
 
-# You can convert the input into a number with the float() function:
+# You can convert the input into a number with the float(), int() function:
 # To find the square root, the input has to be converted into a number:
 
 x = input("Enter a number:")
@@ -42,15 +50,18 @@ y = math.sqrt(float(x))
 print(f"The square root of {x} is {y}")
 
 # Validate Input
-# It is a good practice to validate any input from the user. In the example above, an error will occur if the user inputs something other than a number.
-# To avoid getting an error, we can test the input, and if it is not a number, the user could get a message like "Wrong input, please try again", and allowed to make a new input:
+# It is a good practice to validate any input from the user. In the example above,
+# an error will occur if the user inputs something other than a number.
+# To avoid getting an error, we can test the input, and if it is not a number,
+# the user could get a message like "Wrong input, please try again", and
+# allowed to make a new input:
 # Keep asking until you get a number
 
 y = True
 while y == True:
   x = input("Enter a number:")
   try:
-    x = float(x);
+    x = float(x)
     y = False
   except:
     print("Wrong input, please try again.")
