@@ -1,11 +1,13 @@
 # Python Functions
+# A function is a  block of code that performs a specific task and can be reused whenever needed.
 # A function is a block of code which only runs when it is called.
 
 # A function can return data as a result.
 
 # A function helps avoiding code repetition.
 
-# Functions in python are defined using the block keyword "def", followed with the function's name as the block's name.
+# Functions in python are defined using the block keyword "def", followed with the function's
+# name as the block's name.
 # For example:
 
 
@@ -40,6 +42,7 @@ def my_function_with_args(username, greeting):
 
 my_function_with_args("Larry", "Happy Ramadan" )
 my_function_with_args("4kfright", "Happy easter")
+
 #Functions may return a value to the caller, using the keyword- 'return' . For example:
 
 def sum_two_numbers(a, b):
@@ -129,7 +132,8 @@ print(convert_temp(100, "p"))  # → 212°F
 
 # ATM WITHDRAWAL simulator
 # Problem:
-# Create a function withdraw(balance, amount) that checks if the amount is less than or equal to the balance.
+# Create a function withdraw(balance, amount) that checks if the amount is less than or equal to
+# the balance.
 # If yes, subtract it and return the new balance; otherwise return “Insufficient funds”.
 
 def withdraw(balance, amount):
@@ -145,14 +149,15 @@ print(withdraw(1000000, 4000))
 
 # Password Strength checker
 
-#Problem:Write a function that takes a password and checks: Length >= 8 Contains at least one number Contains
+#Problem:Write a function that takes a password and checks: Length >= 8
+# Contains at least one number Contains
 #at least one uppercase letter Return “Strong”, “Weak”, or “Very Weak”.
 
 #Solution:
 
 
-def check_password(password): # larry
-    has_upper = any(ch.isupper() for ch in password)
+def check_password(password): # lArr8y123
+    has_upper = any(ch.isupper() for ch in password)# [False,True,False,False,False,False,False,False,False ]
     has_digit = any(ch.isdigit() for ch in password)
 
     if len(password) >= 8 and has_upper and has_digit:
@@ -162,8 +167,7 @@ def check_password(password): # larry
     else:
         return "Very Weak"
 
-
-print(check_password("Ralph262627"))
+print(check_password("checkmate123QA"))
 
 
 
@@ -177,6 +181,10 @@ def multiplication_table(n):
         print(f"{n} x {i} = {n * i}")
 
 multiplication_table(10)
+
+
+
+
 
 
 

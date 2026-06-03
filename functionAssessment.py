@@ -98,6 +98,11 @@ while True:
 # Exit
 # Uses a for loop to display all waiting patients.
 
+precord = {
+
+}
+
+
 #===================================================
 
 # Exercise 3: Supermarket Inventory and Sales System

@@ -37,7 +37,7 @@ print("-----------")
 
 # Continue to the next iteration if i is 3:
 
-i = 2
+i = 1
 while i < 6:
   i += 1
   if i == 3:
@@ -61,11 +61,24 @@ else:
 
 
 
+
+
+
+
+
+
 # Excercies 1
 # password == 123
 # Keep Prompting  a user to enter a password if incorrect
 # print "Access Granted" if correct
 
+password = 123
+user_input = int(input("Enter your password: "))
+
+while user_input != password:
+    user_input = int(input("Incorrect Password Try again !: "))
+else:
+    print("Access Granted")
 
 # Write a Program that prints numbers from 1 to 10 using while loops
 
@@ -79,3 +92,5 @@ else:
 
 # Number guessing game:
 # set a secret number. Keep asking the user to guess the number until they get it right
+
+

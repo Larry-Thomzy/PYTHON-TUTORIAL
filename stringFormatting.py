@@ -1,13 +1,16 @@
-# Let's say you have a variable called "name" with your user name in it, and you would then like to print(out a greeting to that user.)
+# Let's say you have a variable called "name" with your user name in it, and you would
+# then like to print(out a greeting to that user.)
 # This prints out "Hello, John!"
 name = "John"
 age = 21
+print("Hello", name, "i am ", age, "years old")
+
 print("Hello, %s!" % name)
 print("My name is %s" %name)
 
 print("%s is %d years old" %(name, age))
 
-#To use two or more argument specifiers, use a tuple (parentheses):
+# To use two or more argument specifiers, use a tuple (parentheses):
 
 # This prints out "John is 23 years old."
 name = "John"
@@ -21,15 +24,15 @@ print("A list: %s" % mylist)
 
 
 # %s - String (or any object with a string representation, like numbers)
-#
+
 # %d - Integers
-#
+
 # %f - Floating point numbers
-#
+
 # %.<number of digits>f - Floating point numbers with a fixed amount of digits to the right of the dot.
 
 gpa = 12.568
-print("My gpa is %f" %gpa)
+print("My gpa is %.2f" %gpa)
 
 astring = "Hello world!"
 astring2 = 'Hello world!'
@@ -38,7 +41,7 @@ astring2 = 'Hello world!'
 astring = "Hello world!"
 print("single quotes are ' '")
 print("Don't")
-print('Don\'t')
+print('Don\'t') # \'
 
 
 # String methods
@@ -51,6 +54,7 @@ print(len("Larry Thomzy!"))
 
 astring = "Hello world!"
 print(astring.index("o"))
+print(astring.index("o",5))
 
 # count : it counts and returns how many times a character appears
 astring = "Hello world!"
@@ -120,13 +124,16 @@ if len(password) >= 8 and password.lower() != password and password.upper() != p
 else:
     print("Weak password, try again.")
 
-
 # Exercise 3: Word Counter
 # Ask for a sentence and print each word with its character count
 sentence = input("Enter a sentence: ")
 words = sentence.split(" ")
 for word in words:
-    print("%s -> %d letters" % (word, len(word)))
+    print("'%s' is %d letters" % (word, len(word)))
+
+# My name is larry
+#["my", "name", "is", "larry"]
+
 
 
 
@@ -140,13 +147,15 @@ else:
     print("Not a palindrome.")
 
 
+
 # Exercise 5: Attendance List Formatter
 # Convert a list of names into a formatted string for display
 students = ["John", "Mary", "James", "Lisa"]
 formatted = ""
+
 for name in students:
     formatted += "%s, " % name
 formatted = formatted.strip(", ")
 print("Present students: %s"% formatted)
 
-
+# "John, Mary, James, Lisa"
