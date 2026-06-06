@@ -1,12 +1,11 @@
 # Python Match
 
-# The match statment is used to perform
+# The match statement is used to perform
 # different actions based on different  conditions.
 
-# Instead of writing many if....else statments, you can use the match statement.
+# Instead of writing many if....else statements, you can use the match statement.
 
 # The match statement selects one of many code blocks to be executed.
-
 day = 4
 match day:
     case 1:
@@ -62,6 +61,31 @@ match day:
     print("A weekday in May")
   case _:
     print("No match")
+
+# num = 48
+# if num >= 70:
+#     print("A")
+# elif num >= 60:
+#     print("B")
+# elif num >= 50:
+#     print("C")
+# elif num >= 45:
+#     print("D")
+# else:
+#     print("E")
+
+score = 40
+match score:
+    case x if x >= 70:
+        print("A")
+    case x if x >= 60:
+        print("B")
+    case m if m >= 50:
+        print("C")
+    case f if f >= 45:
+        print("D")
+    case _:
+        print("E")
 
 
 
