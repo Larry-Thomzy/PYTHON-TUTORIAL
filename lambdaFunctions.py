@@ -14,12 +14,19 @@
 # Normally we define a function using the def keyword somewhere in the code and call it whenever we need to use it.
 
 # create a function that adds up two numbers  --excer
+def add_two_num(x,y):
+    return x + y
+
+print(add_two_num(4,6))
+
+
 
 # Now instead of defining the function somewhere and calling it,
 # we can use python's lambda functions, which are inline functions defined at the same place we use it.
 # So we don't need to declare a function somewhere and revisit the code just for a single time use.
 
-# They don't need to have a name, so they are also called anonymous functions. We define a lambda function using the keyword lambda.
+# They don't need to have a name, so they are also called anonymous functions. We define a lambda function using
+# the keyword lambda.
 
 # So the above sum example using lambda function would be,
 
@@ -41,21 +48,26 @@ x = lambda a, b : a * b
 print(x(5, 6))
 
 
-# Summarize argument a, b, and c and return the result:
+# Sum argument a, b, and c and return the
+# result:
 
 x = lambda a, b, c : a + b + c
 print(x(5, 6, 2))
 
 
 # Why Use Lambda Functions?
-# The power of lambda is better shown when you use them as an anonymous function inside another function.
+# The power of lambda is better shown when you use
+# them as an anonymous function inside another
+# function.
 
 
 # Lambda with Built-in Functions
-# Lambda functions are commonly used with built-in functions like map(), filter(), and sorted().
+# Lambda functions are commonly used with built-in
+# functions like map(), filter(), and sorted().
 
 # Using Lambda with map()
-# The map() function applies a function to every item in an iterable:
+# The map() function applies a function to every
+# item in an iterable:
 
 
 # Double all numbers in a list:
@@ -64,8 +76,14 @@ numbers = [1, 2, 3, 4, 5]
 doubled = list(map(lambda x: x * 2, numbers))
 print(doubled)
 
+triple = map(lambda x : x * 3, [5,6,7])
+print(triple)
+for x in triple:
+    print(x)
+
 # Using Lambda with filter()
-# The filter() function creates a list of items for which a function returns True:
+# The filter() function creates a list of items for
+# which a function returns True:
 
 # Filter out even numbers from a list:
 

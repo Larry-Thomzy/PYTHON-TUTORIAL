@@ -38,6 +38,7 @@ astring = "Hello world!"
 astring2 = 'Hello world!'
 
 
+
 astring = "Hello world!"
 print("single quotes are ' '")
 print("Don't")
@@ -131,9 +132,6 @@ words = sentence.split(" ")
 for word in words:
     print("'%s' is %d letters" % (word, len(word)))
 
-# My name is larry
-#["my", "name", "is", "larry"]
-
 
 
 
@@ -145,8 +143,6 @@ if word.lower() == reversed_word.lower():
     print("Palindrome word!")
 else:
     print("Not a palindrome.")
-
-
 
 # Exercise 5: Attendance List Formatter
 # Convert a list of names into a formatted string for display

@@ -1,10 +1,14 @@
-# Every function in Python receives a predefined number of arguments, if declared normally, like this:
+
+
+# Every function in Python receives a predefined number of arguments,
+# if declared normally, like this:
 
 # def myfunction(first, second, third):
     # do something with the 3 variables
 
 
-# It is possible to declare functions which receive a variable number of arguments, using the following syntax:
+# It is possible to declare functions which receive a variable number of
+# arguments, using the following syntax:
 
 def foo(first, second, third, *therest):
     print("First: %s" % first)
@@ -13,7 +17,6 @@ def foo(first, second, third, *therest):
     print("And all the rest... %s" %list(therest))  # (therest,)--tuple or f string
 
 foo(1,2,3,4,5,6,6,8,72,5,7,1)
-
 # The *therest takes the extra arguments and store them as tuple
 
 # Now this double ** takes the extra arguments and store them as a dictionary

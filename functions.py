@@ -18,6 +18,7 @@ def my_function():
 my_function()
 my_function()
 
+
 # To call a function, write its name followed by parentheses:
 
 
@@ -71,7 +72,7 @@ temp3 = 50
 celsius3 = (temp3 - 32) * 5 / 9
 print(celsius3)
 
-
+# wora
 # With functions, you write the code once and reuse it:
 def fahrenheit_to_celsius(fahrenheit):
   return (fahrenheit - 32) * 5 / 9
@@ -127,8 +128,8 @@ def convert_temp(value, scale):
     else:
         return "Invalid scale"
 
-print(convert_temp(100, "p"))  # → 212°F
-
+print(convert_temp(100, "F"))  # → 212°F
+print(convert_temp(212, "C"))
 
 # ATM WITHDRAWAL simulator
 # Problem:
@@ -145,6 +146,7 @@ def withdraw(balance, amount):
 
 print(withdraw(5000, 2000))
 print(withdraw(1000000, 4000))
+print(withdraw(2000, 5000))
 
 
 # Password Strength checker
@@ -167,7 +169,7 @@ def check_password(password): # lArr8y123
     else:
         return "Very Weak"
 
-print(check_password("checkmate123QA"))
+print(check_password("check"))
 
 
 
@@ -181,6 +183,8 @@ def multiplication_table(n):
         print(f"{n} x {i} = {n * i}")
 
 multiplication_table(10)
+multiplication_table(3)
+multiplication_table(70)
 
 
 

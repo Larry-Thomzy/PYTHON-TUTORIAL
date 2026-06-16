@@ -19,7 +19,7 @@ course = {
     "cyber404": "Cyber-Security",
     "dat213" : "Data-Analyst"
 }
-course_keys = list(course.keys())
+course_keys = list(course.keys()) # ["web101", "cyber404", "dat123"]
 reg_course = set()
 
 
@@ -98,9 +98,21 @@ while True:
 # Exit
 # Uses a for loop to display all waiting patients.
 
-precord = {
-
+# Hospital management system
+patients = {
+    "P001": "John, 11, Malaria",
+    "P002": "James, 31, cancer",
+    "P003": "Mary, 22, Headache",
+    "P004": "David, 55, Hiv"
 }
+waiting_queue = []
+patient_ids = set()
+
+
+
+
+
+
 
 
 #===================================================

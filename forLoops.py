@@ -112,9 +112,26 @@ for x in adj:
     print(x, y)
 
 
+
+forms = ["Mr", "Mrs", "Dr"]
+names = ["Tayo", "Tade", "Temi"]
+
+for i in forms:
+  for j in names:
+    print(i,j)
+
+
 # The pass Statement
 # for loops cannot be empty, but if you for some reason have a for loop with no content,
 # put in the pass statement to avoid getting an error.
 
 for x in [0, 1, 2]:
-  pass
+    pass
+
+
+# multiplication table generator
+num = int(input("Enter a number: "))
+for i in range(1,13):
+  print(f"{num} X {i} = {num * i} ")
+
+

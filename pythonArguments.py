@@ -88,6 +88,10 @@ my_function(animal = "dog", name = "Buddy")
 my_function("dog", "Buddy")
 my_function(name="Bobby", animal="Dog")
 
+def my_function(name, food):
+  print(f"My name is {name}, my fav food is {food}\n")
+
+my_function(food = "Semo & Vegies", name = "Larry")
 # This way, with keyword arguments, the order of the arguments does not matter.
 
 def my_function(animal, name):

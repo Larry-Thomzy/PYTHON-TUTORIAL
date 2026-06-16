@@ -534,7 +534,7 @@ def calculate_discount(price):
 # Function exists but doesn't do anything yet
 
 
-# Excercises
+# Excercise
 # Create a variable age with the value 20
 # Write an if statement that prints "Child" if age is less than 13
 # Add an elif that prints "Teenager" if age is less than 18
@@ -607,4 +607,3 @@ def calculate_discount(price):
 # Use shorthand if to assign "Pass" if score ≥ 50, otherwise "Fail".
 # Input two numbers.
 # Use shorthand if to print the larger number.
-
