@@ -302,12 +302,22 @@ if not a > b:
 # You can combine multiple logical operators in a single expression. Python evaluates not first, then and, then or.
 
 # Combining and, or, and not:
-age = 25
-is_student = False
-has_discount_code = True
+age = 17
+is_student = True
+has_discount_code = False
 
-if (age < 18 or age > 65) and not is_student or has_discount_code:
-  print("Discount applies!")
+if (age < 18 or age > 65) and not is_student or has_discount_code: # True -- True = True -- True = True
+  print("Discount applies!") # False -- True = False -- True = True
+# True && False = False OR False = False
+if age < 18 and is_student:
+  print("Discount Applied")
+elif age > 65 and is_student:
+  print("Discount Applied")
+elif has_discount_code:
+  print("print discount applied")
+else:
+  print("No discount Applied")
+
 
 
 # Using Parentheses for Clarity
