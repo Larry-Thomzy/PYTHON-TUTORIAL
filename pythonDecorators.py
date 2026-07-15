@@ -54,7 +54,8 @@ print(myfunction())
 print(otherfunction())
 
 # Arguments in the Decorated Function
-# Functions that requires arguments can also be decorated, just make sure you pass the arguments to the wrapper function:
+# Functions that requires arguments can also be decorated,
+# just make sure you pass the arguments to the wrapper function:
 
 
 # Functions with arguments can also be decorated:
@@ -71,7 +72,10 @@ def myfunction(name):
 print(myfunction("John"))
 
 # *args and **kwargs
-# Sometimes the decorator function has no control over the arguments passed from decorated function, to solve this problem, add (*args, **kwargs) to the wrapper function, this way the wrapper function can accept any number, and any type of arguments, and pass them to the decorated function.
+# Sometimes the decorator function has no control over the arguments
+# passed from decorated function, to solve this problem, add (*args, **kwargs)
+# to the wrapper function, this way the wrapper function can accept any number,
+# and any type of arguments, and pass them to the decorated function.
 
 
 # Secure the function with *args and **kwargs arguments:
