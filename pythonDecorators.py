@@ -119,12 +119,15 @@ def myfunction():
 print(myfunction())
 
 
+
+
 # Multiple Decorators
 # You can use multiple decorators on one function.
 
 # This is done by placing the decorator calls on top of each other.
 
-# Decorators are called in the reverse order, starting with the one closest to the function.
+# Decorators are called in the reverse order, starting with the one closest
+# to the function.
 
 
 # One decorator for upper case, and one for adding a greeting:
@@ -146,7 +149,8 @@ def myfunction():
 
 print(myfunction())
 # Preserving Function Metadata
-# Functions in Python has metadata that can be accessed using the __name__ and __doc__ attributes.
+# Functions in Python has metadata that can be accessed using
+# the __name__ and __doc__ attributes.
 
 
 # Normally, a function's name can be returned with the __name__ attribute:

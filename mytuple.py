@@ -63,7 +63,6 @@ print(nested[1][1])  # Output: 4
 
 
 
-
  # When to Use Tuples
  # When data should not change (e.g. coordinates, constant settings).
  # When you want faster performance.
