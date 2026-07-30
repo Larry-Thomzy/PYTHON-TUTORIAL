@@ -11,6 +11,7 @@
 # With the while loop we can execute a set of statements as long as a condition is true.
 
 
+
 # Print i as long as i is less than 6:
 i = 1
 while i < 6:
@@ -74,21 +75,38 @@ else:
 
 password = 123
 user_input = int(input("Enter your password: "))
-
 while user_input != password:
-    user_input = int(input("Incorrect Password Try again !: "))
-else:
-    print("Access Granted")
+  user_input = int(input("Incorrect password Try again: "))
+
+
+print("Access Granted")
+
 
 # Write a Program that prints numbers from 1 to 10 using while loops
 
 # Write a program that prints numbers 10 to 1 using while loops
 
 # Write a program that prints all even numbers from 1 to 20 using a while loop
+i = 1
+while i <= 20:
+  if i % 2 == 0:
+    print(i)
+  i += 1
 
 # Write a program that calculates the sum of numbers from 1 to 50 using a while loop
+i = 1
+total = 0
+while i <= 50:
+  total += i
+  i += 1
+else:
+  print("The sum of numbers:", total)
 
 # write a program that prints the multiplication table of 5 (from 5 x 1 to 5 x 10) using a while loop
+x = 1
+while x <= 10:
+  print("5 x", x, " = ", 5 * x)
+  x += 1
 
 # Number guessing game:
 # set a secret number. Keep asking the user to guess the number until they get it right

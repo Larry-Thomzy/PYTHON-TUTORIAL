@@ -1,7 +1,9 @@
+import random
 # Generators
 # Generators are functions that can pause and resume their execution.
 
-# When a generator function is called, it returns a generator object, which is an iterator.
+# When a generator function is called, it returns a generator object, which is
+# an iterator.
 
 # The code inside the function is not executed yet, it is only compiled.
 # The function only executes when you iterate over the generator.
@@ -9,7 +11,8 @@
 
 
 
-# A generator is a special kind of function that remembers where it stopped and continues from there the next time you call it.
+# A generator is a special kind of function that remembers where it
+# stopped and continues from there the next time you call it.
 # It does not return all values at once.
 # It produces values one at a time, only when needed.
 # It uses the yield keyword instead of return.
@@ -22,18 +25,22 @@ def my_generator():
   yield 2
   yield 3
 
+
+
 for value in my_generator():
   print(value)
 import random
 
-# Generators allow you to iterate over data without storing the entire dataset in memory.
+# Generators allow you to iterate over data without storing the entire dataset in
+# memory.
 
 # Instead of using return, generators use the yield keyword.
 
 # The yield Keyword
 # The yield keyword is what makes a function a generator.
 
-# When yield is encountered, the function's state is saved, and the value is returned. T
+# When yield is encountered, the function's state is saved, and the value is
+# returned.
 # The next time the generator is called, it continues from where it left off.
 
 
@@ -48,12 +55,14 @@ def count_up_to(n):
 for num in count_up_to(5):
   print(num)
 
-# Unlike return, which terminates the function, yield pauses it and can be called multiple times.
+# Unlike return, which terminates the function, yield pauses it and
+# can be called multiple times.
 
 
 
 # Generators Saves Memory
-# Generators are memory-efficient because they generate values on-the-fly instead of storing everything in memory.
+# Generators are memory-efficient because they generate values on-the-fly
+# instead of storing everything in memory.
 
 # For large datasets, generators save memory:
 
@@ -65,6 +74,7 @@ def large_sequence(n):
 
 # This doesn't create a million numbers in memory
 gen = large_sequence(1000000)
+print(next(gen))
 print(next(gen))
 print(next(gen))
 print(next(gen))
@@ -85,7 +95,10 @@ print(next(gen))
 print(next(gen))
 print(next(gen))
 
-# When there are no more values to yield, the generator raises a StopIteration exception:
+
+
+# When there are no more values to yield, the generator raises a StopIteration
+# exception:
 
 def simple_gen():
   yield 1
@@ -94,17 +107,18 @@ def simple_gen():
 gen = simple_gen()
 print(next(gen))
 print(next(gen))
-print(next(gen)) # This will raise StopIteration
+# print(next(gen)) # This will raise StopIteration
 
 # Generator Expressions
-# Similar to list comprehensions, you can create generators using generator expressions with parentheses
+# Similar to list comprehensions, you can create generators
+# using generator expressions with parentheses
 # instead of square brackets:
 
 
 # List comprehension vs generator expression:
 
 # List comprehension - creates a list
-list_comp = [x * x for x in range(5)]
+list_comp = [x * x for x in range(5)] # = [0, 1, 4, 9, 16]
 print(list_comp)
 
 # Generator expression - creates a generator
@@ -115,7 +129,7 @@ print(list(gen_exp))
 # Using a generator expression with sum:
 
 # Calculate sum of squares without creating a list
-total = sum(x * x for x in range(10))
+total = sum(x * x for x in range(10)) # = []
 print(total)
 
 
@@ -175,25 +189,6 @@ gen.close()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def lottery():
     # returns 6 numbers between 1 and 40
     for i in range(6):
@@ -208,10 +203,6 @@ for random_number in lottery():
 print()
 
 g = lottery()
-
-
-
-
 print("First number:", next(g))
 print("Second number:", next(g))
 print("Third number:", next(g))
@@ -219,8 +210,6 @@ print("Fourth number:", next(g))
 print("Fifth number:", next(g))
 print("Sixth number:", next(g))
 print("Bonus:", next(g))
-
-
 
 print()
 
@@ -234,16 +223,19 @@ for x in d:
     print(x)
 
 
-# Write a program that asks the user to enter a word and prints out whether that word contains any
+# Write a program that asks the user to enter a word and prints out whether
+# that word contains any
 # vowels.
 
-# Write a program that asks the user to enter a list of integers. Do the following:
+# Write a program that asks the user to enter a list of integers.
+# Do the following:
 # (a) Print the total number of items in the list.
 # (b) Print the last item in the list.
 # (c) Print the list in reverse order.
 # (d) Print Yes if the list contains a 5 and No otherwise.
 # (e) Print the number of fives in the list.
-# (f) Remove the first and last items from the list, sort the remaining items, and print the result.
+# (f) Remove the first and last items from the list, sort the
+# remaining items, and print the result.
 # (g) Print how many integers in the list are less than 5.
 
 
@@ -251,26 +243,5 @@ for x in d:
 # (a) Print the list.
 # (b) Print the average of the elements in the list.
 # (c) Print the largest and smallest values in the list.
-# (d) Print the second largest and second smallest entries in the list (e) Print how many even
-# numbers are in the list.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# (d) Print the second largest and second smallest entries in the list
+# (e) Print how many even numbers are in the list.
