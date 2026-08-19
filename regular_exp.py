@@ -1,4 +1,5 @@
-# Regular Expressions (regex) are patterns used to match, search, extract, and validate text.
+# Regular Expressions (regex) are patterns used to match, search, extract,
+# and validate text.
 # Python provides regex support through the re module.
 
 # Python has a built-in package called re, which can be used to work with Regular Expressions.
@@ -55,10 +56,13 @@ print(re.search("^The.*Spain$", txt))
 # .	     Matches any character except newline
 
 # \b	Returns a match where the specified characters are at the beginning or at the end of a word
-# (the "r" in the beginning is making sure that the string is being treated as a "raw string")	r"\bain" r"ain\b"
+# (the "r" in the beginning is making sure that the string is being treated as a "raw string")
+# r"\bain" r"ain\b"
 #
-# \B	Returns a match where the specified characters are present, but NOT at the beginning (or at the end) of a word
-# (the "r" in the beginning is making sure that the string is being treated as a "raw string")	r"\Bain" r"ain\B"
+# \B	Returns a match where the specified characters are present, but NOT at the beginning
+# (or at the end) of a word
+# (the "r" in the beginning is making sure that the string is being treated as a "raw string")
+# r"\Bain" r"ain\B"
 
 
 
@@ -135,7 +139,8 @@ print(x)
 
 
 # The search() Function
-# The search() function searches the string for a match, and returns a Match object if there is a match.
+# The search() function searches the string for a match, and returns a Match object if there is a
+# match.
 #
 # If there is more than one match, only the first occurrence of the match will be returned:
 

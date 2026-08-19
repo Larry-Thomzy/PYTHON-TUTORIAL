@@ -17,6 +17,8 @@ def my_function():
 
 my_function()
 my_function()
+my_function()
+my_function()
 
 
 # To call a function, write its name followed by parentheses:
@@ -44,7 +46,7 @@ def my_function_with_args(username, greeting):
 my_function_with_args("Larry", "Happy Ramadan" )
 my_function_with_args("4kfright", "Happy easter")
 
-#Functions may return a value to the caller, using the keyword- 'return' . For example:
+# Functions may return a value to the caller, using the keyword- 'return' . For example:
 
 def sum_two_numbers(a, b):
     return  a + b
@@ -72,7 +74,7 @@ temp3 = 50
 celsius3 = (temp3 - 32) * 5 / 9
 print(celsius3)
 
-# wora
+# WORA : Write Once Run Anywhere/Anytime
 # With functions, you write the code once and reuse it:
 def fahrenheit_to_celsius(fahrenheit):
   return (fahrenheit - 32) * 5 / 9
@@ -102,6 +104,13 @@ def get_greeting():
 print(get_greeting())
 
 # If a function doesn't have a return statement, it returns None by default.
+
+def say_name(name):
+    return name
+
+myname = say_name("Larry")
+print(myname)
+print(myname)
 
 
 # The pass Statement
@@ -149,6 +158,8 @@ print(withdraw(1000000, 4000))
 print(withdraw(2000, 5000))
 
 
+
+
 # Password Strength checker
 
 #Problem:Write a function that takes a password and checks: Length >= 8
@@ -185,10 +196,4 @@ def multiplication_table(n):
 multiplication_table(10)
 multiplication_table(3)
 multiplication_table(70)
-
-
-
-
-
-
-
+print(fahrenheit_to_celsius(100))
