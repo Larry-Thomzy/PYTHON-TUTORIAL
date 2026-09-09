@@ -11,7 +11,7 @@
 # function.
 
 
-# A basic decorator that uppercases the return value of the decorated function.
+# A basic decorator that uppercase's the return value of the decorated function.
 
 def changecase(func):
   def myinner():
@@ -32,7 +32,8 @@ print(myfunction())
 # The function myfunction is the function that gets decorated.
 
 # Multiple Decorator Calls
-# A decorator can be called multiple times. Just place the decorator above the function you want to decorate.
+# A decorator can be called multiple times.
+# Just place the decorator above the function you want to decorate.
 
 
 # Using the @changecase decorator on two functions:
@@ -155,10 +156,10 @@ print(myfunction())
 
 # Normally, a function's name can be returned with the __name__ attribute:
 
-def larry():
+def ADDNUMBERS():
   return "Have a great day!"
 
-print(larry.__name__)
+print(ADDNUMBERS.__name__)
 # But, when a function is decorated, the metadata of the original function is lost.
 
 

@@ -1,17 +1,18 @@
 # Exercise 1: Student Course Registration System
-#
 # Create a program that:
 #
 # Stores available courses in a dictionary where:
 # Key = course code
-# Value = course name --
+# Value = course name
+
+# Display All Available Courses
 
 # Allows students to register courses.
+# Stores registered courses in a set.
 # Prevents duplicate course registrations using a set.
+# Displays all registered courses using a for loop.
 # Uses a while loop to keep displaying a menu. --
 # Uses a match statement for menu navigation.
-# Stores registered courses in a list.
-# Displays all registered courses using a for loop.
 # Stores student information in a tuple (student_id, name).
 
 course = {
@@ -98,15 +99,15 @@ while True:
 # Exit
 # Uses a for loop to display all waiting patients.
 
-# Hospital management system
-patients = {
-    "P001": "John, 11, Malaria",
-    "P002": "James, 31, cancer",
-    "P003": "Mary, 22, Headache",
-    "P004": "David, 55, Hiv"
-}
-waiting_queue = []
-patient_ids = set()
+# # Hospital management system
+# patients = {
+#     "P001": "John, 11, Malaria",
+#     "P002": "James, 31, cancer",
+#     "P003": "Mary, 22, Headache",
+#     "P004": "David, 55, Hiv"
+# }
+# waiting_queue = []
+# patient_ids = set()
 
 
 
@@ -249,3 +250,15 @@ patient_ids = set()
 # View Ride History
 # Uses conditionals to determine driver availability.
 # Uses a for loop to display all completed rides.
+
+
+
+
+
+
+
+
+
+
+
+

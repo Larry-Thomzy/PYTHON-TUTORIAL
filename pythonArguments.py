@@ -1,9 +1,13 @@
 # Arguments
 # Information can be passed into functions as arguments.
 
-# Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
+# Arguments are specified after the function name, inside the parentheses.
+# You can add as many arguments as you want, just separate them with a comma.
 
-# The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:
+# The following example has a function with one argument (fname).
+# When the function is called, we pass along a first name, which is used inside
+# the function to print the full name:
+
 
 
 # A function with one argument:
@@ -17,7 +21,8 @@ my_function("Linus")
 
 
 # Parameters vs Arguments
-# The terms parameter and argument can be used for the same thing: information that are passed into a function.
+# The terms parameter and argument can be used for the same thing:
+# information that are passed into a function.
 #
 # From a function's perspective:
 #
@@ -43,10 +48,11 @@ my_function("Emil") # "Emil" is an argument
 def my_function(fname, lname):
   print(fname + " " + lname)
 
-my_function("Emil", "Refsnes")
+my_function("Emil", "Adeola")
 
 
-# If you try to call the function with the wrong number of arguments, you will get an error:
+# If you try to call the function with the wrong number of arguments,
+# you will get an error:
 
 
 # This function expects 2 arguments, but gets only 1:
@@ -57,7 +63,9 @@ def my_function(fname, lname):
 # my_function("Emil")
 
 # Default Parameter Values
-# You can assign default values to parameters. If the function is called without an argument, it uses the default value:
+# You can assign default values to parameters. If the function is
+# called without an argument,
+# it uses the default value:
 
 def my_function(name = "friend"):
   print("Hello", name)
@@ -76,6 +84,8 @@ my_function("Sweden")
 my_function("India")
 my_function()
 my_function("Brazil")
+
+
 
 # Keyword Arguments
 # You can send arguments with the key = value syntax.
@@ -104,7 +114,8 @@ my_function(name = "Buddy", animal = "dog")
 # The phrase Keyword Arguments is often shortened to kwargs in Python documentation.
 
 # Positional Arguments
-# When you call a function with arguments without using keywords, they are called positional arguments.
+# When you call a function with arguments without using keywords,
+# they are called positional arguments.
 
 # Positional arguments must be in the correct order:
 def my_function(animal, name):
@@ -196,7 +207,8 @@ def my_function(name, /):
 
 my_function("Emil")
 
-# Without the , / you are actually allowed to use keyword arguments even if the function expects positional arguments:
+# Without the , / you are actually allowed to use keyword arguments even if
+# the function expects positional arguments:
 
 def my_function(name):
   print("Hello", name)
@@ -216,7 +228,7 @@ def my_function(name, /):
 def my_function(*, name):
   print("Hello", name)
 
-my_function(name = "Emil")
+my_function( name = "Emil")
 
 
 # Without *,, you are allowed to use positional arguments even if the function expects keyword arguments:

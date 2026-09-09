@@ -19,9 +19,9 @@
 # Now we can use the module we just created, by using the import statement:
 
 
-import myModule
+# import myModule
 
-myModule.greeting("Jonathan")
+# myModule.greeting("Jonathan")
 
 # Note: When using a function from a module, use the syntax: module_name.function_name.
 
@@ -42,8 +42,8 @@ myModule.greeting("Jonathan")
 
 
 
-a = myModule.person1["age"]
-print(a)
+# a = myModule.person1["age"]
+# print(a)
 
 
 # Naming a Module
@@ -54,10 +54,10 @@ print(a)
 
 # Create an alias for mymodule called mx:
 
-import myModule as mx
+# import myModule as mx
 
-a = mx.person1["age"]
-print(a)
+# a = mx.person1["age"]
+# print(a)
 
 
 # Built-in Modules
@@ -81,6 +81,10 @@ import platform
 x = dir(platform)
 print(x)
 
+
+import random
+y = dir(random)
+print(y)
 # The dir() function can be used on all modules, also the ones you create yourself.
 
 # Import From Module

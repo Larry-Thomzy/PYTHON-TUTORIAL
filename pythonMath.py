@@ -63,3 +63,5 @@ import math
 x = math.pi
 
 print(x)
+
+print(dir(math))

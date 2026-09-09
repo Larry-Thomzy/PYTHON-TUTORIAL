@@ -6,6 +6,8 @@
 # Instead of writing many if....else statements, you can use the match statement.
 
 # The match statement selects one of many code blocks to be executed.
+
+
 day = 4
 match day:
     case 1:
@@ -35,7 +37,7 @@ match day:
     case 7:
         print("Today is Sunday")
     case _:
-        print("Looking forward to the weekend ")
+        print("Looking forward to the weekend")
 
 # Combine Values
 # Use the pipe character | as an or operator in the case evaluation to check for
@@ -86,6 +88,5 @@ match score:
         print("D")
     case _:
         print("E")
-
 
 

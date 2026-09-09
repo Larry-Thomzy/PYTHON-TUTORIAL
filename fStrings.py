@@ -1,8 +1,8 @@
 # Python String Formatting
-
 # F-Strings
 # F-string allows you to format selected parts of a string.
-# To specify a string as an f-string, simply put an f in front of the string literal, like this:
+# To specify a string as an f-string, simply put an f in front of the string
+# literal, like this:
 
 
 # Create an f-string:
@@ -10,7 +10,8 @@ txt = f"The price is 49 dollars"
 print(txt)
 
 # Placeholders and Modifiers
-# To format values in an f-string, add placeholders {}, a placeholder can contain variables, operations, functions, and modifiers to format the value.
+# To format values in an f-string, add placeholders {}, a placeholder can contain
+# variables, operations, functions, and modifiers to format the value.
 
 # Add a placeholder for the price variable:
 price = 59
@@ -18,8 +19,10 @@ txt = f"The price is {price} dollars"
 print(txt)
 
 
+
 # A placeholder can also include a modifier to format the value.
-# A modifier is included by adding a colon : followed by a legal formatting type, like .2f which means fixed point number with 2 decimals:
+# A modifier is included by adding a colon : followed by a legal formatting type,
+# like .2f which means fixed point number with 2 decimals:
 
 # Display the price with 2 decimals:
 price = 59
@@ -61,6 +64,7 @@ txt = f"It is very {'Expensive' if price>50 else 'Cheap'}"
 print(txt)
 
 
+
 # Execute Functions in F-Strings
 # You can execute functions inside the placeholder:
 
@@ -76,18 +80,24 @@ print(txt)
 def myconverter(x):
   return x * 0.3048
 
+
+
+
+
+
 txt = f"The plane is flying at a {myconverter(30000)} meter altitude"
 print(txt)
 
 # More Modifiers
-# At the beginning of this chapter we explained how to use the .2f modifier to format a number into a fixed point number with 2 decimals.
+# At the beginning of this chapter we explained how to use the .2f modifier to format a number
+# into a fixed point number with 2 decimals.
 
 # There are several other modifiers that can be used to format values:
 
 # Use a comma as a thousand separator:
 
-price = 59000
-txt = f"The price is {price:,} dollars"
+price = 59000000
+txt = f"The price is {price:.2f} dollars"
 print(txt)
 
 # String format()
@@ -102,9 +112,11 @@ price = 49
 txt = "The price is {} dollars"
 print(txt.format(price))
 
+
 # You can add parameters inside the curly brackets to specify how to convert the value:
 # Format the price to be displayed as a number with two decimals:
 txt = "The price is {:.2f} dollars"
+print(txt.format(price))
 
 
 # Multiple Values
@@ -119,13 +131,14 @@ myorder = "I want {} pieces of item number {} for {:.2f} dollars."
 print(myorder.format(quantity, itemno, price))
 
 # Index Numbers
-# You can use index numbers (a number inside the curly brackets {0}) to be sure the values are placed in the correct placeholders:
+# You can use index numbers (a number inside the curly brackets {0}) to be sure the values are
+# placed in the correct placeholders:
 
 quantity = 3
 itemno = 567
 price = 49
-myorder = "I want {0} pieces of item number {1} for {2:.2f} dollars."
-print(myorder.format(quantity, itemno, price))
+myorder = "I want {2} pieces of item number {1} for {0:.2f} dollars."
+print(myorder.format(price,itemno,quantity))
 
 # Also, if you want to refer to the same value more than once, use the index number:
 
@@ -141,3 +154,24 @@ print(txt.format(age, name))
 
 myorder = "I have a {carname}, it is a {model}."
 print(myorder.format(carname = "Ford", model = "Mustang"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -60,7 +60,7 @@ print(grade4)
 
 nested = ((1, 2), (3, 4))
 print(nested[1][1])  # Output: 4
-
+print(nested[0][1])
 
 
  # When to Use Tuples

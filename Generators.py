@@ -146,11 +146,13 @@ def fibonacci():
   while True:
     yield a
     a, b = b, a + b
-
 # Get first 100 Fibonacci numbers
 gen = fibonacci()
 for _ in range(100):
   print(next(gen))
+# a = 1
+# b = 1
+# a = b
 
 
 # Generator Methods
@@ -245,3 +247,7 @@ for x in d:
 # (c) Print the largest and smallest values in the list.
 # (d) Print the second largest and second smallest entries in the list
 # (e) Print how many even numbers are in the list.
+
+# 154
+# 143
+# 130

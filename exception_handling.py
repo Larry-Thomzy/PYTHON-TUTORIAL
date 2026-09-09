@@ -11,6 +11,7 @@
 
 
 
+
 # EXCEPTIONS
 
 # When an error occurs, or exception as we call it, Python will normally stop and generate an error message.
@@ -37,7 +38,6 @@
 
 
 # The try block will generate an exception, because x is not defined:
-
 try:
   print(x)
 except:
@@ -104,9 +104,6 @@ except:
 
 
 
-
-
-
 # Raise an exception
 # As a Python developer you can choose to throw an exception if a condition occurs.
 #
@@ -126,7 +123,7 @@ if x < 0:
 
 
 # Raise a TypeError if x is not an integer:
-x = 9
+x = 7
 
 if not type(x) is int:
   raise TypeError("Only integers are allowed")
@@ -145,6 +142,7 @@ except ZeroDivisionError:
 try:
     user_input = int(input("Enter a number: "))
     result = 10 / user_input
+    print(result)
 except ValueError:
     print("Please enter a valid integer.")
 except ZeroDivisionError:
@@ -167,12 +165,11 @@ finally:
 # Creating Your Own Custom Exception
 class InvalidScoreError(Exception):
     pass
-
 def enter_score(score):
     if score < 0 or score > 100:
         raise InvalidScoreError("Score must be between 0 and 100.")
     return score
-
+# print(enter_score(150))
 try:
     print(enter_score(150))
 except InvalidScoreError as e:
@@ -224,7 +221,8 @@ withdraw(balance, 7000)
 # Handles these errors:
 # User enters text instead of a number
 # User enters zero as the second number
-#
+# Allow the user to try again for 5 attempts
+# log the user out after attemt's exceeded
 # try:
 #     a = int(input("Enter first number: "))
 #     b = int(input("Enter second number: "))

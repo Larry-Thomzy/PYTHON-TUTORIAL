@@ -33,6 +33,7 @@ print(next(myit))
 print(next(myit))
 
 
+
 # Looping Through an Iterator
 # We can also use a for loop to iterate through an iterable object:
 #
@@ -94,6 +95,8 @@ print(next(myiter))
 print(next(myiter))
 print(next(myiter))
 
+print()
+
 
 
 # Stop after 20 iterations:
@@ -112,6 +115,27 @@ class MyNumbers:
 
 myclass = MyNumbers()
 myiter = iter(myclass)
+
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
 
 for x in myiter:
   print(x)
