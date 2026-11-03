@@ -43,6 +43,25 @@ print(p3.x)
 # The pass Statement
 # class definitions cannot be empty, but if you for some reason have a class definition with no content,
 # put in the pass statement to avoid getting an error.
-
+age = 23
+if age >= 18:
+  pass
+else:
+  print("You're restrited")
 class Person:
   pass
+
+class Woman:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+
+w1 = Woman("Alice", 30)
+w2 = Woman('Kate', 20)
+w3 = Woman('Michelle', 50)
+print(w1.name)
+print(w2.name)
+print(w3.name)
+
+

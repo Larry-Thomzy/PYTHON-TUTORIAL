@@ -111,7 +111,7 @@ except:
 
 
 # Raise an error and stop the program if x is lower than 0:
-x = 7
+x = 2
 
 if x < 0:
   raise Exception("Sorry, no numbers below zero")
@@ -159,6 +159,7 @@ else:
     print("Age accepted:", value)
 finally:
     print("Program ended.")
+
 
 
 
@@ -222,7 +223,7 @@ withdraw(balance, 7000)
 # User enters text instead of a number
 # User enters zero as the second number
 # Allow the user to try again for 5 attempts
-# log the user out after attemt's exceeded
+# log out  the user out after attemt's exceeded
 # try:
 #     a = int(input("Enter first number: "))
 #     b = int(input("Enter second number: "))

@@ -58,6 +58,7 @@ print(sum_two_numbers(4,5))
 
 
 
+
 # Why Use Functions?
 # Imagine you need to convert temperatures from Fahrenheit to Celsius several times in your program.
 # Without functions, you would have to write the same calculation code repeatedly:
@@ -167,8 +168,6 @@ print(withdraw(2000, 5000))
 #at least one uppercase letter Return “Strong”, “Weak”, or “Very Weak”.
 
 #Solution:
-
-
 def check_password(password): # lArr8y123
     has_upper = any(ch.isupper() for ch in password)# [False,True,False,False,False,False,False,False,False ]
     has_digit = any(ch.isdigit() for ch in password)

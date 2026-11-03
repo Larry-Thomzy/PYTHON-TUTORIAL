@@ -21,6 +21,7 @@ def countdown(n):
 
 countdown(5)
 
+
 # Base Case and Recursive Case
 # Every recursive function must have two parts:
 
@@ -38,7 +39,6 @@ def factorial(n):
   else:
     return n * factorial(n - 1)
 print(factorial(5))
-
 
 # The base case is crucial. Always make sure your recursive function has a condition that will eventually be met.
 
@@ -60,14 +60,6 @@ def fibonacci(n):
   else:
     return fibonacci(n - 1) + fibonacci(n - 2)
 print(fibonacci(7))
-#
-# (6) + (5)
-# (5) + (4)
-# (4) + (3)
-# (3) + (2)
-# (2) + (1)
-# (1) + (0) =
-
 
 # Recursion with Lists
 # Recursion can be used to process lists by handling one element at a time:

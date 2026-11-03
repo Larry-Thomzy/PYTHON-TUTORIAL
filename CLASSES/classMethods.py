@@ -14,6 +14,9 @@ class Person:
 p1 = Person("Emil")
 p1.greet()
 
+p2 = Person("Tobi")
+p2.greet()
+
 # Note: All methods must have self as the first parameter.
 
 
@@ -69,6 +72,7 @@ class Person:
 p1 = Person("Linus", 25)
 p1.celebrate_birthday()
 p1.celebrate_birthday()
+print(p1)
 
 
 # The __str__() Method
@@ -84,6 +88,8 @@ class Person:
 
 p1 = Person("Emil", 36)
 print(p1)
+print(p1.name)
+print(p1.age)
 
 
 # With the __str__() method:

@@ -60,6 +60,7 @@ class Persons:
     self.age = age
 
 
+
 ps1 = Persons("Linus", 30)
 
 del ps1.age

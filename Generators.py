@@ -11,6 +11,7 @@ import random
 
 
 
+
 # A generator is a special kind of function that remembers where it
 # stopped and continues from there the next time you call it.
 # It does not return all values at once.
@@ -73,11 +74,13 @@ def large_sequence(n):
     yield i
 
 # This doesn't create a million numbers in memory
-gen = large_sequence(1000000)
+gen = large_sequence(1000000) # generator object
 print(next(gen))
 print(next(gen))
 print(next(gen))
 print(next(gen))
+print(next(gen))
+
 
 
 
@@ -94,6 +97,7 @@ gen = simple_gen()
 print(next(gen))
 print(next(gen))
 print(next(gen))
+
 
 
 
@@ -116,7 +120,6 @@ print(next(gen))
 
 
 # List comprehension vs generator expression:
-
 # List comprehension - creates a list
 list_comp = [x * x for x in range(5)] # = [0, 1, 4, 9, 16]
 print(list_comp)
@@ -126,10 +129,13 @@ gen_exp = (x * x for x in range(5))
 print(gen_exp)
 print(list(gen_exp))
 
+
+
+
 # Using a generator expression with sum:
 
 # Calculate sum of squares without creating a list
-total = sum(x * x for x in range(10)) # = []
+total = sum(x * x for x in range(10)) # = [0,1,4,9,16,25,36,49,64,81]
 print(total)
 
 
@@ -150,9 +156,6 @@ def fibonacci():
 gen = fibonacci()
 for _ in range(100):
   print(next(gen))
-# a = 1
-# b = 1
-# a = b
 
 
 # Generator Methods
@@ -199,6 +202,10 @@ def lottery():
     # returns a 7th number between 1 and 15
     yield random.randint(1, 15)
 
+
+
+
+
 for random_number in lottery():
        print("And the next number is... %d!" %(random_number))
 
@@ -229,6 +236,21 @@ for x in d:
 # that word contains any
 # vowels.
 
+
+
+
+def vowel_checker():
+  word = input("Enter a word:")  # brck
+  for letter in word.lower():
+    if letter in "aeiou":
+      print("Your word contains vowel letters")
+      break
+  else:
+    print("No vowels")
+
+
+vowel_checker()
+
 # Write a program that asks the user to enter a list of integers.
 # Do the following:
 # (a) Print the total number of items in the list.
@@ -240,6 +262,36 @@ for x in d:
 # remaining items, and print the result.
 # (g) Print how many integers in the list are less than 5.
 
+numbers = input("Enter a list of numbers:")
+lnum = numbers.split(',')
+numbers = [int(x) for x in lnum]
+# a.
+print(f"Total: {sum(numbers)}")
+# b.
+print(f"Last Item: {numbers[-1]}")
+# c.
+print(f"List in Reverse order: {numbers[::-1]}")
+# d.
+if 5 in numbers:
+  print("Yes")
+else:
+  print("5 not found")
+# e.
+print(f"The number of 5's in list: {numbers.count(5)}")
+# f.
+numbers.pop(0)
+numbers.pop()
+numbers.sort()
+print(numbers)
+
+#g.
+ans = 0
+for num in numbers:
+  if num < 5:
+    ans +=1
+print(f"There are {ans} numbers less than 5")
+
+
 
 # Write a program that generates a list of 20 random numbers between 1 and 100.
 # (a) Print the list.
@@ -248,6 +300,17 @@ for x in d:
 # (d) Print the second largest and second smallest entries in the list
 # (e) Print how many even numbers are in the list.
 
-# 154
-# 143
-# 130
+nums = [random.randint(1,100) for _ in range (20)]
+print(nums)
+print(sum(nums)/len(nums))
+print(max(nums))
+print(min(nums))
+nums.sort()
+print(nums[-2])
+print(nums[1])
+ans = 0
+for num in nums:
+  if num % 2 == 0:
+    ans += 1
+print(ans)
+

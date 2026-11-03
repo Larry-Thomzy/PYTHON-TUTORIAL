@@ -1,0 +1,5 @@
+s001,larry thomzy,22,larrythomzy@gmail.com,sci & Tech
+S002,Omofeyisetan Adebayo,24,ofey@gmailcom,Food Sci & Tech
+s003,Mubarak,18,muby@gmail.com,Sci
+
+[s001,larry thomzy, 22, larr, sci]

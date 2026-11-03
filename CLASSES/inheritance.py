@@ -107,7 +107,7 @@ class Student4(Person):
 
 
 class Student5(Person):
-  def __init__(self, fname, lname):
+  def __init__(self, fname, lname,):
     super().__init__(fname, lname)
     self.graduationyear = 2019
 

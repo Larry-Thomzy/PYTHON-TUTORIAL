@@ -82,7 +82,6 @@ plane1 = Plane("Boeing", "747")     #Create a Plane object
 for x in (car1, boat1, plane1):
   x.move()
 
-
 # Look at the for loop at the end. Because of polymorphism we can execute
 # the same method for all three classes.
 
@@ -132,14 +131,10 @@ for x in (car1, boat1, plane1):
 
 # Child classes inherits the properties and methods from the parent class.
 #
-# In the example above you can see that the Car class is empty, but
+# In the example above you can see that the Car class is empty, butS
 # it inherits brand, model, and move() from Vehicle.
 #
 # The Boat and Plane classes also inherit brand, model, and move() from
 # Vehicle, but they both override the move() method.
 #
 # Because of polymorphism we can execute the same method for all classes.
-
-
-
-

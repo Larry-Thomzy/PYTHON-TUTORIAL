@@ -15,6 +15,7 @@ class Person:
     self.age = age
 
 p1 = Person("Emil", 36)
+p2 = Person ("Feyi", 22)
 
 print(p1.name)
 print(p1.age)
@@ -93,3 +94,7 @@ class Car:
 
 c1 = Car("Larry", "2026", "Range rover auto-biography", "black", "LARRY-THOMZY", 4)
 print(f"{c1.owner} just got a {c1.color} {c1.model} {c1.brand}, with plate number {c1.licence_plate} and has {c1.num_doors} doors ")
+
+c2 = Car("Feyi", "2002", "Jaguar", "white", "F62BC1", 4)
+print(c2.owner)
+print(c2.brand)

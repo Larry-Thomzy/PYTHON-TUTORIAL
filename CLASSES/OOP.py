@@ -22,7 +22,6 @@
 # Fruit       Apple,banana,mango
 # Car         Volvo,Audi,Toyota
 
-
 # When you create an object from a class, it inherits all the variables and functions defined inside that class.
 
 # Very Soon, you will learn about:

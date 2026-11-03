@@ -4,7 +4,6 @@
 # It is used to access properties and methods that belong to the class.
 
 # Use self to access class properties:
-
 class Person:
   def __init__(self, name, age):
     self.name = name
@@ -15,7 +14,9 @@ class Person:
 
 
 p1 = Person("Hannah", 25)
+p2 = Person("Daniel", 30)
 p1.greet()
+p2.greet()
 
 # Note: The self parameter must be the first parameter of any method in the class.
 

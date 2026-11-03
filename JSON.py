@@ -5,7 +5,8 @@
 # JSON is a syntax for storing and exchanging data.
 
 # JSON is text, written with JavaScript object notation.
-# Python has a built-in package called json, which can be used to work with JSON data.
+# Python has a built-in package called json,
+# which can be used to work with JSON data.
 
 import json
 
@@ -48,7 +49,8 @@ print(json.dumps(False))
 print(json.dumps(None))
 
 
-# When you convert from Python to JSON, Python objects are converted into the JSON (JavaScript) equivalent:
+# When you convert from Python to JSON, Python objects are
+# converted into the JSON (JavaScript) equivalent:
 
 
 # Python --	 JSON

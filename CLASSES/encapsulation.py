@@ -23,6 +23,7 @@ class Person:
 p1 = Person("Emil", 25)
 print(p1.name)
 #print(p1.__age) # This will cause an error
+# print(p1._Person__age)
 
 # Note: Private properties cannot be accessed directly from outside the class.
 
@@ -42,6 +43,7 @@ class Person:
     return self.__age
 
 p1 = Person("Tobias", 25)
+# print(p1.__age)
 print(p1.get_age())
 
 
@@ -71,7 +73,6 @@ print(p1.get_age())
 
 p1.set_age(26)
 print(p1.get_age())
-
 
 
 
@@ -160,7 +161,7 @@ class Calculator:
 
 calc = Calculator()
 calc.add(10)
-calc.add(5)
+calc.add(6)
 print(calc.result)
 #calc.__validate(5) # This would cause an error
 
