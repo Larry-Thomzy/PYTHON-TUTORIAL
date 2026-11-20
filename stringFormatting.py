@@ -5,6 +5,8 @@ name = "John"
 age = 21
 print("Hello", name, "i am ", age, "years old")
 
+# Format Specifier '%'
+
 print("Hello, %s!" % name)
 print("My name is %s" %name)
 
@@ -94,6 +96,9 @@ print(astring.endswith("asdfasdfasdf"))
 lettersplit = list(astring)
 print(lettersplit)
 
+lettersplit2 = list(astring)
+print(lettersplit2)
+
 
 # Example: Using strip()
 
@@ -127,8 +132,9 @@ else:
 
 # Exercise 3: Word Counter
 # Ask for a sentence and print each word with its character count
-sentence = input("Enter a sentence: ")
+sentence = input("Enter a sentence: ") # [I, am, a, boy]
 words = sentence.split(" ")
+print(words)
 for word in words:
     print("'%s' is %d letters" % (word, len(word)))
 
