@@ -157,6 +157,7 @@ formatted = ""
 
 for name in students:
     formatted += "%s, " % name
+
 formatted = formatted.strip(", ")
 print("Present students: %s"% formatted)
 
